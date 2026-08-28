@@ -1928,8 +1928,99 @@ function mostrarConfirmacion(nombre) {
 
 function generarInformePDF() {
 
-    document.body.classList.add("generando-informe");
+    const contenido = document.querySelector(".pantalla-inicio").innerHTML;
 
-    window.print();
+    const ventana = window.open("", "_blank");
+
+    if (!ventana) {
+        alert("El navegador bloqueó la ventana de impresión. Permití las ventanas emergentes e intentá nuevamente.");
+        return;
+    }
+
+    ventana.document.write(`
+        <!DOCTYPE html>
+        <html lang="es">
+        <head>
+
+            <meta charset="UTF-8">
+
+            <title>DPM Consulting - Diagnóstico Ejecutivo</title>
+
+            <link rel="stylesheet"
+                  href="https://nathius0509.github.io/diagnostico-ejecutivo/styles.css">
+
+            <style>
+
+                body {
+                    background: white !important;
+                    display: block !important;
+                    min-height: auto !important;
+                }
+
+                .diagnostico-container {
+                    max-width: 900px !important;
+                    margin: 0 auto !important;
+                    padding: 30px !important;
+                }
+
+                .pantalla-inicio {
+                    box-shadow: none !important;
+                    border-radius: 0 !important;
+                }
+
+                .cta-diagnostico {
+                    display: none !important;
+                }
+
+                .btn-pdf,
+                .informe-acciones {
+                    display: none !important;
+                }
+
+                @media print {
+
+                    @page {
+                        size: A4;
+                        margin: 15mm;
+                    }
+
+                    body {
+                        background: white !important;
+                    }
+
+                }
+
+            </style>
+
+        </head>
+
+        <body>
+
+            <main class="diagnostico-container">
+
+                <section class="pantalla-inicio">
+
+                    ${contenido}
+
+                </section>
+
+            </main>
+
+        </body>
+        </html>
+    `);
+
+    ventana.document.close();
+
+    ventana.onload = function () {
+
+        setTimeout(function () {
+
+            ventana.focus();
+            ventana.print();
+
+        }, 700);
+
+    };
 
 }
