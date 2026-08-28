@@ -1440,3 +1440,66 @@ h3 {
 
 }
 
+/* ========================================
+   AJUSTE FINAL PARA IMPRESIÓN PDF
+   ======================================== */
+
+@media print {
+
+    @page {
+        size: A4;
+        margin: 12mm;
+    }
+
+    html,
+    body {
+        margin: 0 !important;
+        padding: 0 !important;
+        background: white !important;
+        height: auto !important;
+        min-height: 0 !important;
+    }
+
+    .diagnostico-container {
+        width: 100% !important;
+        max-width: none !important;
+        padding: 0 !important;
+        margin: 0 !important;
+    }
+
+    .pantalla-inicio {
+        box-shadow: none !important;
+        border-radius: 0 !important;
+        padding: 0 !important;
+        margin: 0 !important;
+        min-height: 0 !important;
+        height: auto !important;
+    }
+
+    .resultado {
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+
+    /* Ocultar elementos que no deben aparecer en el PDF */
+
+    .cta-diagnostico {
+        display: none !important;
+    }
+
+    .informe-acciones {
+        display: none !important;
+    }
+
+    /* Evitar espacios artificiales */
+
+    .mapa-prioridades,
+    .proximos-pasos,
+    .resumen-ejecutivo,
+    .prioridad-ejecutiva {
+        break-inside: avoid;
+        page-break-inside: avoid;
+    }
+
+}
+
