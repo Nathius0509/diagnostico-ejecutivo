@@ -1,0 +1,1442 @@
+/* =====================================================
+   DPM CONSULTING
+   DIAGNÓSTICO EJECUTIVO
+   CSS SIMPLE Y ESTABLE
+   ===================================================== */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f4f6f8;
+    color: #1d2733;
+    min-height: 100vh;
+}
+
+/* =====================================================
+   CONTENEDOR PRINCIPAL
+   ===================================================== */
+
+.diagnostico-container {
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 30px;
+}
+
+.pantalla-inicio {
+    background: white;
+    border-radius: 18px;
+    padding: 45px 55px;
+    box-shadow: 0 10px 35px rgba(0,0,0,0.08);
+}
+
+/* =====================================================
+   MARCA
+   ===================================================== */
+
+.logo {
+    font-size: 42px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: #17365d;
+}
+
+.subtitulo-logo {
+    margin-top: 5px;
+    font-size: 11px;
+    letter-spacing: 1.5px;
+    color: #6b7280;
+}
+
+/* =====================================================
+   TÍTULOS
+   ===================================================== */
+
+h1 {
+    margin-top: 35px;
+    font-size: 36px;
+    line-height: 1.2;
+    color: #17365d;
+}
+
+h1 span {
+    display: block;
+    font-weight: 400;
+    color: #374151;
+}
+
+h2 {
+    color: #17365d;
+}
+
+h3 {
+    color: #17365d;
+}
+
+/* =====================================================
+   PANTALLA INICIAL
+   ===================================================== */
+
+.descripcion {
+    max-width: 650px;
+    margin: 22px auto 30px;
+    font-size: 17px;
+    line-height: 1.6;
+    color: #5b6470;
+    text-align: center;
+}
+
+.info-diagnostico {
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    margin: 30px 0;
+}
+
+.info-item {
+    text-align: center;
+}
+
+.info-item strong {
+    display: block;
+    font-size: 26px;
+    color: #17365d;
+}
+
+.info-item span {
+    font-size: 13px;
+    color: #6b7280;
+}
+
+.nota {
+    margin-top: 18px;
+    font-size: 12px;
+    color: #8a929c;
+    text-align: center;
+}
+
+/* =====================================================
+   BOTONES
+   ===================================================== */
+
+.btn-principal {
+    border: none;
+    border-radius: 8px;
+    padding: 15px 25px;
+    background: #17365d;
+    color: white;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.btn-principal:hover {
+    background: #244a78;
+}
+
+.btn-principal:disabled {
+    opacity: 0.45;
+    cursor: not-allowed;
+}
+
+/* =====================================================
+   PREGUNTAS
+   ===================================================== */
+
+.progreso {
+    font-size: 13px;
+    font-weight: 600;
+    color: #6b7280;
+    margin-bottom: 8px;
+}
+
+.barra-progreso {
+    width: 100%;
+    height: 8px;
+    background: #e5e7eb;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 25px;
+}
+
+.barra-progreso-avance {
+    height: 100%;
+    background: #17365d;
+    border-radius: 10px;
+}
+
+.dimension {
+    margin-bottom: 10px;
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #6b7280;
+}
+
+.pantalla-inicio h2 {
+    font-size: 23px;
+    line-height: 1.35;
+    margin-bottom: 22px;
+}
+
+.respuestas {
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+}
+
+.respuesta {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    padding: 13px 16px;
+    background: white;
+    border: 1px solid #d7dce2;
+    border-radius: 8px;
+    text-align: left;
+    font-size: 14px;
+    color: #374151;
+    cursor: pointer;
+}
+
+.respuesta:hover {
+    border-color: #17365d;
+    background: #f8fafc;
+}
+
+.respuesta.seleccionada {
+    border-color: #17365d;
+    background: #eef3f8;
+}
+
+.letra {
+    min-width: 28px;
+    width: 28px;
+    height: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #cbd2da;
+    border-radius: 50%;
+    font-weight: 700;
+    color: #17365d;
+}
+
+.respuesta.seleccionada .letra {
+    background: #17365d;
+    color: white;
+    border-color: #17365d;
+}
+
+.btn-siguiente {
+    margin-top: 20px;
+}
+
+/* =====================================================
+   RESULTADO
+   ===================================================== */
+
+.resultado {
+    width: 100%;
+}
+
+.portada-informe {
+    min-height: 500px;
+    padding: 55px 45px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.portada-logo {
+    font-size: 32px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: #17365d;
+}
+
+.portada-tagline {
+    margin-top: 8px;
+    font-size: 11px;
+    letter-spacing: 1px;
+    color: #6b7280;
+}
+
+.portada-separador {
+    width: 70px;
+    height: 2px;
+    background: #17365d;
+    margin: 35px auto;
+}
+
+.portada-titulo {
+    font-size: 30px;
+    font-weight: 700;
+    color: #17365d;
+}
+
+.portada-subtitulo {
+    margin-top: 10px;
+    font-size: 15px;
+    color: #6b7280;
+}
+
+.portada-datos {
+    margin-top: 60px;
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+}
+
+.portada-datos div {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.portada-datos span {
+    font-size: 10px;
+    color: #8a929c;
+    letter-spacing: 1px;
+}
+
+.portada-datos strong {
+    color: #17365d;
+}
+
+.portada-footer {
+    margin-top: 70px;
+    font-size: 11px;
+    color: #9ca3af;
+}
+
+/* =====================================================
+   PUNTAJE
+   ===================================================== */
+
+.puntaje-global {
+    font-size: 60px !important;
+    margin: 20px 0 5px !important;
+    color: #17365d;
+}
+
+.puntaje-global span {
+    font-size: 22px;
+    font-weight: 400;
+    color: #7b8490;
+}
+
+.nivel {
+    display: inline-block;
+    padding: 7px 16px;
+    margin: 5px 0 18px;
+    border-radius: 20px;
+    background: #eef3f8;
+    color: #17365d;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.descripcion-resultado {
+    max-width: 650px;
+    margin: 0 auto 20px;
+    font-size: 14px;
+    line-height: 1.5;
+    color: #5b6470;
+}
+
+.separador {
+    width: 100%;
+    height: 1px;
+    background: #e5e7eb;
+    margin: 25px 0;
+}
+
+/* =====================================================
+   RESUMEN
+   ===================================================== */
+
+.resumen-ejecutivo {
+    margin: 20px auto;
+    padding: 18px 20px;
+    background: #f8fafc;
+    border-radius: 8px;
+    text-align: left;
+}
+
+.resumen-ejecutivo h3 {
+    margin-bottom: 8px;
+    font-size: 17px;
+}
+
+.resumen-ejecutivo p {
+    font-size: 13px;
+    line-height: 1.6;
+    color: #4b5563;
+}
+
+.prioridad-ejecutiva {
+    margin: 20px auto;
+    padding: 15px 18px;
+    background: #f8fafc;
+    border-left: 4px solid #17365d;
+    border-radius: 6px;
+    text-align: left;
+}
+
+.prioridad-ejecutiva p {
+    font-size: 13px;
+    line-height: 1.5;
+    color: #4b5563;
+}
+
+.etiqueta {
+    display: block;
+    margin-bottom: 6px;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: #7b8490;
+}
+
+/* =====================================================
+   BARRAS DE DIMENSIONES
+   ===================================================== */
+
+.dimensiones {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    text-align: left;
+}
+
+.dimension-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 6px;
+    font-size: 13px;
+    color: #4b5563;
+}
+
+.dimension-header strong {
+    color: #17365d;
+}
+
+.barra-dimension {
+    width: 100%;
+    height: 9px;
+    background: #e5e7eb;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.barra-dimension-avance {
+    height: 100%;
+    min-width: 2px;
+    background: #17365d;
+    border-radius: 10px;
+}
+
+.recomendacion-dimension {
+    margin-top: 6px;
+    font-size: 11px;
+    line-height: 1.4;
+    color: #6b7280;
+}
+
+/* =====================================================
+   MAPA DE PRIORIDADES
+   ===================================================== */
+
+.mapa-prioridades {
+    margin: 30px auto;
+    text-align: left;
+}
+
+.mapa-prioridades h3 {
+    text-align: center;
+    margin-bottom: 18px;
+}
+
+.prioridad-card {
+    padding: 16px 18px;
+    margin-bottom: 12px;
+    border-radius: 8px;
+    background: #f8fafc;
+}
+
+.fortaleza-card {
+    border-left: 4px solid #557a95;
+}
+
+.oportunidad-card {
+    border-left: 4px solid #17365d;
+}
+
+.segunda-oportunidad-card {
+    border-left: 4px solid #94a3b8;
+}
+
+.prioridad-titulo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+}
+
+.prioridad-titulo strong {
+    font-size: 14px;
+    color: #17365d;
+}
+
+.prioridad-valor {
+    font-weight: 700;
+    color: #17365d;
+}
+
+.prioridad-card p {
+    margin-top: 7px;
+    font-size: 12px;
+    line-height: 1.5;
+    color: #6b7280;
+}
+
+.recomendacion-prioritaria {
+    margin-top: 10px;
+    padding: 10px;
+    background: white;
+    border-radius: 6px;
+    font-size: 11px;
+    line-height: 1.5;
+    color: #4b5563;
+}
+
+/* =====================================================
+   PRÓXIMOS PASOS
+   ===================================================== */
+
+.proximos-pasos {
+    margin: 25px auto;
+    text-align: left;
+}
+
+.proximos-pasos h3 {
+    margin-bottom: 10px;
+}
+
+.proximos-pasos p,
+.proximos-pasos li {
+    font-size: 13px;
+    line-height: 1.5;
+    color: #4b5563;
+}
+
+.proximos-pasos ul {
+    padding-left: 20px;
+    margin-top: 10px;
+}
+
+.proximos-pasos li {
+    margin-bottom: 6px;
+}
+
+/* =====================================================
+   CTA
+   ===================================================== */
+
+.cta-diagnostico {
+    margin-top: 30px;
+    padding: 25px;
+    background: #f4f6f8;
+    border-radius: 12px;
+    text-align: center;
+}
+
+.cta-diagnostico h3 {
+    margin-bottom: 10px;
+}
+
+.cta-diagnostico p {
+    margin-bottom: 18px;
+    font-size: 13px;
+    line-height: 1.5;
+    color: #6b7280;
+}
+
+/* =====================================================
+   FORMULARIO
+   ===================================================== */
+
+.formulario-container {
+    max-width: 620px;
+    margin: 0 auto;
+}
+
+.formulario-container h1 {
+    margin: 10px 0 15px;
+    text-align: center;
+    font-size: 28px;
+}
+
+.formulario-intro {
+    margin-bottom: 25px;
+    text-align: center;
+    font-size: 14px;
+    line-height: 1.5;
+    color: #6b7280;
+}
+
+.campo {
+    margin-bottom: 15px;
+}
+
+.campo label {
+    display: block;
+    margin-bottom: 6px;
+    font-size: 13px;
+    font-weight: 600;
+    color: #374151;
+}
+
+.campo input,
+.campo select {
+    width: 100%;
+    padding: 11px 13px;
+    border: 1px solid #d1d5db;
+    border-radius: 7px;
+    background: white;
+    font-family: inherit;
+    font-size: 14px;
+}
+
+.campo input:focus,
+.campo select:focus {
+    outline: none;
+    border-color: #17365d;
+}
+
+.opcional {
+    font-weight: 400;
+    color: #9ca3af;
+}
+
+.consentimiento {
+    margin: 20px 0;
+    font-size: 12px;
+    color: #6b7280;
+}
+
+.consentimiento label {
+    display: flex;
+    gap: 8px;
+}
+
+.btn-formulario {
+    width: 100%;
+}
+
+.formulario-privacidad {
+    margin-top: 12px;
+    text-align: center;
+    font-size: 10px;
+    line-height: 1.5;
+    color: #9ca3af;
+}
+
+/* =====================================================
+   CONFIRMACIÓN
+   ===================================================== */
+
+.confirmacion {
+    text-align: center;
+}
+
+.confirmacion-icono {
+    width: 55px;
+    height: 55px;
+    margin: 0 auto 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: #eef3f8;
+    color: #17365d;
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.confirmacion h3 {
+    margin-bottom: 15px;
+}
+
+.confirmacion p {
+    margin-bottom: 8px;
+    font-size: 14px;
+    line-height: 1.5;
+    color: #6b7280;
+}
+
+.informe-acciones {
+    margin-top: 25px;
+    text-align: center;
+}
+
+.btn-pdf {
+    padding: 13px 20px;
+    border: none;
+    border-radius: 7px;
+    background: #17365d;
+    color: white;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+/* =====================================================
+   IMPRESIÓN / PDF
+   ===================================================== */
+
+@media print {
+
+    @page {
+        size: A4;
+        margin: 12mm;
+    }
+
+    body {
+        background: white;
+        display: block;
+    }
+
+    .diagnostico-container {
+        max-width: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    .pantalla-inicio {
+        padding: 0;
+        box-shadow: none;
+        border-radius: 0;
+    }
+
+    .portada-informe {
+        min-height: 250mm;
+        page-break-after: always;
+    }
+
+    .resultado {
+        width: 100%;
+    }
+
+    .barra-dimension,
+    .barra-progreso {
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+    }
+
+    .barra-dimension-avance,
+    .barra-progreso-avance {
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+    }
+
+    .cta-diagnostico {
+        display: none;
+    }
+
+    .informe-acciones {
+        display: none;
+    }
+
+    .mapa-prioridades,
+    .proximos-pasos {
+        page-break-inside: avoid;
+    }
+
+    .dimension-resultado {
+        page-break-inside: avoid;
+    }
+}
+
+/* =====================================================
+   CELULAR
+   ===================================================== */
+
+@media (max-width: 700px) {
+
+    .diagnostico-container {
+        padding: 15px;
+    }
+
+    .pantalla-inicio {
+        padding: 30px 22px;
+    }
+
+    h1 {
+        font-size: 30px;
+    }
+
+    .info-diagnostico {
+        gap: 25px;
+    }
+
+    .portada-datos {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+}
+
+/* ========================================
+   AJUSTE FINAL - PANTALLA DE RESULTADOS
+   ======================================== */
+
+/* La portada pertenece al informe PDF,
+   no a la pantalla de resultados */
+.resultado .portada-informe {
+    display: none;
+}
+
+/* Encabezados de la pantalla de resultados */
+.resultado > .dimension {
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+/* Título principal del resultado */
+.resultado > h1 {
+    text-align: left;
+}
+
+/* Nivel */
+.resultado > .nivel {
+    display: inline-block;
+}
+
+/* Descripción */
+.resultado > .descripcion-resultado {
+    text-align: left;
+}
+
+/* Títulos de las secciones */
+.resultado > h3 {
+    text-align: left;
+    color: #17365d;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+/* ========================================
+   PORTADA SOLO PARA IMPRESIÓN / PDF
+   ======================================== */
+
+@media print {
+
+    .resultado .portada-informe {
+        display: flex;
+    }
+
+}
+
+/* ========================================
+   AJUSTE FINAL - PANTALLA DE RESULTADOS
+   ======================================== */
+
+/* Ocultar la portada del informe en pantalla */
+.pantalla-inicio .portada-informe {
+    display: none;
+}
+
+/* Contenedor general del resultado */
+.resultado {
+    width: 100%;
+    text-align: center;
+}
+
+/* Título "DIAGNÓSTICO EJECUTIVO" */
+.resultado > .dimension {
+    margin-top: 5px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+/* Puntaje global */
+.resultado .puntaje-global {
+    margin: 5px 0 0 !important;
+    font-size: 64px !important;
+    line-height: 1 !important;
+    text-align: center;
+}
+
+/* /100 */
+.resultado .puntaje-global span {
+    font-size: 22px;
+}
+
+/* Nivel */
+.resultado .nivel {
+    display: inline-block;
+    margin: 10px 0 15px;
+}
+
+/* Descripción */
+.resultado .descripcion-resultado {
+    max-width: 650px;
+    margin: 0 auto 18px;
+    text-align: center;
+}
+
+/* Resumen */
+.resultado .resumen-ejecutivo {
+    max-width: 650px;
+    margin: 20px auto;
+    text-align: left;
+}
+
+/* Prioridad */
+.resultado .prioridad-ejecutiva {
+    max-width: 650px;
+    margin: 18px auto;
+    text-align: left;
+}
+
+/* Separador */
+.resultado .separador {
+    max-width: 650px;
+    margin: 22px auto;
+}
+
+/* Títulos de sección */
+.resultado > h3 {
+    max-width: 650px;
+    margin: 0 auto 18px;
+    text-align: left;
+}
+
+/* Dimensiones */
+.resultado .dimensiones {
+    max-width: 650px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+/* Cada dimensión */
+.resultado .dimension-resultado {
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+/* Nombre + porcentaje */
+.resultado .dimension-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 5px;
+}
+
+/* Barras */
+.resultado .barra-dimension {
+    width: 100%;
+    height: 8px;
+    background: #e5e7eb;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.resultado .barra-dimension-avance {
+    height: 100%;
+    background: #17365d;
+    border-radius: 10px;
+}
+
+/* Recomendaciones */
+.resultado .recomendacion-dimension {
+    margin-top: 6px;
+    text-align: left;
+}
+
+/* Mapa de prioridades */
+.resultado .mapa-prioridades {
+    max-width: 650px;
+    margin: 28px auto;
+}
+
+/* Título del mapa */
+.resultado .mapa-prioridades h3 {
+    text-align: center;
+    margin-bottom: 18px;
+}
+
+/* Tarjetas */
+.resultado .prioridad-card {
+    text-align: left;
+}
+
+/* Próximos pasos */
+.resultado .proximos-pasos {
+    max-width: 650px;
+    margin: 25px auto;
+    text-align: left;
+}
+
+/* CTA */
+.resultado .cta-diagnostico {
+    max-width: 650px;
+    margin: 28px auto 0;
+    text-align: center;
+}
+
+/* Botón CTA */
+.resultado .cta-diagnostico .btn-principal {
+    display: inline-block;
+    margin: 0 auto;
+}
+
+
+/* ========================================
+   PANTALLA - BOTONES
+   ======================================== */
+
+.btn-principal,
+.btn-siguiente {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* ========================================
+   INFORME PDF
+   ======================================== */
+
+/*
+   Cuando se imprime:
+   la portada vuelve a aparecer.
+*/
+
+@media print {
+
+    body {
+        background: white;
+    }
+
+    .pantalla-inicio .portada-informe {
+        display: block;
+    }
+
+    .resultado {
+        text-align: center;
+    }
+
+    .puntaje-global {
+        text-align: center !important;
+    }
+
+}
+
+
+/* ========================================
+   AJUSTE MOBILE
+   ======================================== */
+
+@media (max-width: 700px) {
+
+    .resultado .puntaje-global {
+        font-size: 52px !important;
+    }
+
+    .resultado .resumen-ejecutivo,
+    .resultado .prioridad-ejecutiva,
+    .resultado .dimensiones,
+    .resultado .mapa-prioridades,
+    .resultado .proximos-pasos,
+    .resultado .cta-diagnostico {
+        width: 100%;
+    }
+
+}
+
+/* =====================================================
+   AJUSTES FINALES DPM - PRESENTACIÓN
+   No modificar estilos anteriores
+   ===================================================== */
+
+/* -------------------------------
+   PANTALLA INICIAL
+   ------------------------------- */
+
+.pantalla-inicio {
+    text-align: center;
+}
+
+/* Centrar botón de inicio */
+#btn-comenzar {
+    display: block;
+    margin: 0 auto;
+}
+
+/* -------------------------------
+   RESULTADO EN PANTALLA
+   ------------------------------- */
+
+.resultado {
+    width: 100%;
+    text-align: center;
+}
+
+/* Títulos del resultado */
+.resultado > h1,
+.resultado > h2,
+.resultado > h3,
+.resultado > .dimension {
+    text-align: center;
+}
+
+/* Puntaje total */
+.resultado .puntaje-global {
+    text-align: center;
+    line-height: 1;
+    margin: 15px 0 8px !important;
+}
+
+/* Nivel */
+.resultado .nivel {
+    display: inline-block;
+}
+
+/* Texto descriptivo */
+.resultado .descripcion-resultado {
+    text-align: center;
+}
+
+/* Resumen y prioridad */
+.resultado .resumen-ejecutivo,
+.resultado .prioridad-ejecutiva {
+    text-align: left;
+}
+
+/* -------------------------------
+   BARRAS DE DIMENSIONES
+   ------------------------------- */
+
+.dimension-resultado {
+    width: 100%;
+}
+
+.dimension-header {
+    width: 100%;
+}
+
+/* -------------------------------
+   PORTADA DEL INFORME
+   EN PANTALLA NO SE MUESTRA
+   ------------------------------- */
+
+.portada-informe {
+    display: none;
+}
+
+/* -------------------------------
+   BOTONES
+   ------------------------------- */
+
+.btn-principal {
+    display: inline-block;
+}
+
+/* Botón siguiente */
+.btn-siguiente {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* CTA final */
+.cta-diagnostico {
+    text-align: center;
+}
+
+/* -------------------------------
+   FORMULARIO
+   ------------------------------- */
+
+.formulario-container {
+    text-align: left;
+}
+
+.formulario-container .dimension,
+.formulario-container h1,
+.formulario-intro {
+    text-align: center;
+}
+
+/* -------------------------------
+   INFORME / IMPRESIÓN
+   ------------------------------- */
+
+@media print {
+
+    body {
+        background: white;
+    }
+
+    .diagnostico-container {
+        max-width: none;
+        padding: 0;
+    }
+
+    .pantalla-inicio {
+        box-shadow: none;
+        padding: 0;
+    }
+
+    /* La portada SÍ aparece en el PDF */
+    .portada-informe {
+        display: block;
+        min-height: 100vh;
+        page-break-after: always;
+    }
+
+}
+
+/* =====================================================
+   HOJA 3 - PLAN DE ACCIÓN EJECUTIVO
+   ===================================================== */
+
+.hoja-3 {
+    display: none;
+    width: 100%;
+    max-width: 650px;
+    min-height: 900px;
+    margin: 0 auto;
+    padding: 35px 0 20px;
+    text-align: left;
+}
+
+/* Encabezado */
+
+.hoja-3-header {
+    border-bottom: 1px solid #e5e7eb;
+    padding-bottom: 18px;
+    margin-bottom: 35px;
+}
+
+.hoja-3-header .portada-logo {
+    font-size: 28px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: #17365d;
+}
+
+.hoja-3-header .portada-tagline {
+    margin-top: 4px;
+    font-size: 10px;
+    letter-spacing: 1.3px;
+    color: #6b7280;
+}
+
+/* Título */
+
+.hoja-3-titulo {
+    margin-bottom: 30px;
+}
+
+.hoja-3-titulo .dimension {
+    margin-bottom: 8px;
+}
+
+.hoja-3-titulo h2 {
+    margin: 0 0 10px;
+    color: #17365d;
+    font-size: 28px;
+}
+
+.hoja-3-titulo p {
+    max-width: 600px;
+    color: #6b7280;
+    font-size: 13px;
+    line-height: 1.6;
+}
+
+/* Prioridades */
+
+.plan-prioridades {
+    margin-bottom: 35px;
+}
+
+.plan-prioridad {
+    display: flex;
+    gap: 16px;
+    padding: 15px 0;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.plan-numero {
+    min-width: 38px;
+    height: 38px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #17365d;
+    color: white;
+
+    border-radius: 6px;
+
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.plan-contenido {
+    flex: 1;
+}
+
+.plan-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 5px;
+}
+
+.plan-header strong {
+    color: #17365d;
+    font-size: 15px;
+}
+
+.plan-header span {
+    color: #17365d;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.plan-contenido p {
+    margin: 0;
+    color: #6b7280;
+    font-size: 12px;
+    line-height: 1.5;
+}
+
+/* Roadmap */
+
+.roadmap {
+    margin-top: 30px;
+}
+
+.roadmap h3 {
+    color: #17365d;
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.roadmap-item {
+    display: flex;
+    gap: 20px;
+    padding: 13px 0;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.roadmap-periodo {
+    width: 75px;
+    flex-shrink: 0;
+
+    color: #17365d;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.roadmap-contenido {
+    flex: 1;
+}
+
+.roadmap-contenido strong {
+    color: #17365d;
+    font-size: 13px;
+}
+
+.roadmap-contenido p {
+    margin: 4px 0 0;
+    color: #6b7280;
+    font-size: 12px;
+    line-height: 1.5;
+}
+
+/* Cierre */
+
+.plan-cierre {
+    margin-top: 35px;
+    padding: 22px;
+
+    background: #f8fafc;
+    border-left: 4px solid #17365d;
+
+    text-align: center;
+}
+
+.plan-cierre .dimension {
+    margin-bottom: 8px;
+}
+
+.plan-cierre p {
+    margin: 0 auto 18px;
+
+    max-width: 500px;
+
+    color: #4b5563;
+    font-size: 13px;
+    line-height: 1.6;
+}
+
+.plan-cierre strong {
+    display: block;
+
+    color: #17365d;
+    font-size: 14px;
+}
+
+.plan-cierre span {
+    display: block;
+
+    margin-top: 4px;
+
+    color: #7b8490;
+    font-size: 10px;
+    letter-spacing: 1px;
+}
+
+
+/* =====================================================
+   PDF - HOJA 3
+   ===================================================== */
+
+@media print {
+
+    .hoja-3 {
+        display: block;
+
+        max-width: none;
+        width: 100%;
+
+        min-height: 0;
+
+        padding: 30px 35px;
+
+        page-break-before: always;
+        break-before: page;
+    }
+
+}
+
