@@ -2037,3 +2037,13 @@ function generarInformePDF() {
     };
 
 }
+
+// ========================================
+// VOLVER A LA HOME DE DPM CONSULTING
+// ========================================
+
+function volverHome() {
+
+    window.location.href = "https://www.dpmconsulting.org/";
+
+}
