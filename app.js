@@ -1916,6 +1916,19 @@ function mostrarConfirmacion(nombre) {
 
             </div>
 
+            <div class="volver-home">
+
+                <button
+                    type="button"
+                    class="btn-volver-home"
+                    onclick="volverHome()">
+
+                    ← Volver a DPM Consulting
+
+                </button>
+                
+            </div>
+
         `;
 
     }
