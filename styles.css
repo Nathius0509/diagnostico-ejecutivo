@@ -1503,3 +1503,9 @@ h3 {
 
 }
 
+.btn-volver-home {
+    display: inline-block;
+    text-decoration: none;
+    cursor: pointer;
+}
+
