@@ -2044,6 +2044,6 @@ function generarInformePDF() {
 
 function volverHome() {
 
-    window.location.href = "https://www.dpmconsulting.org/Home";
+    window.top.location.href = "https://www.dpmconsulting.org/Home";
 
 }
