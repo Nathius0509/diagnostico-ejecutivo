@@ -1917,13 +1917,13 @@ function mostrarConfirmacion(nombre) {
             </div>
 
             <div class="volver-home">
+            
                 <a
-                    href="https://www.dpmconsulting.org/"
-                    class="btn-volver-home"
-                    onclick="event.preventDefault(); window.open('https://www.dpmconsulting.org/', '_top');">
-                
+                    href="https://www.dpmconsulting.org/home"
+                    class="btn-volver-home">
+            
                     ← Volver a DPM Consulting
-                
+            
                 </a>
             
             </div>
