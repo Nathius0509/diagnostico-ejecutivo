@@ -1920,6 +1920,7 @@ function mostrarConfirmacion(nombre) {
             
                 <a
                     href="https://www.dpmconsulting.org/"
+                    target="_top"
                     class="btn-volver-home">
             
                     ← Volver a DPM Consulting
