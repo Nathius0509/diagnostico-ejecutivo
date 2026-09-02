@@ -1917,18 +1917,17 @@ function mostrarConfirmacion(nombre) {
             </div>
 
             <div class="volver-home">
-                            
-                <a
-                    href="https://www.dpmconsulting.org/"
-                    target="_blank"
-                    rel="noopener"
-                    class="btn-volver-home">
-                
+            
+                <button
+                    type="button"
+                    class="btn-volver-home"
+                    onclick="volverADPM()">
+            
                     ← Volver a DPM Consulting
-                
-                </a>            
-            </div>
-        `;
+            
+                </button>
+            
+            </div>        `;
 
     }
 
@@ -2034,5 +2033,14 @@ function generarInformePDF() {
         }, 700);
 
     };
+
+}
+
+function volverADPM() {
+
+    window.open(
+        "https://www.dpmconsulting.org/",
+        "_blank"
+    );
 
 }
