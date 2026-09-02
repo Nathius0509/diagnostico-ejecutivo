@@ -1917,16 +1917,16 @@ function mostrarConfirmacion(nombre) {
             </div>
 
             <div class="volver-home">
-            
+                            
                 <a
-                    href="https://www.dpmconsulting.org/home"
-                    target="_top"
+                    href="https://www.dpmconsulting.org/"
+                    target="_blank"
+                    rel="noopener"
                     class="btn-volver-home">
-            
+                
                     ← Volver a DPM Consulting
-            
-                </a>
-            
+                
+                </a>            
             </div>
         `;
 
