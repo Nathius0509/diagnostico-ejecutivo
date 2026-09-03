@@ -1524,3 +1524,19 @@ h3 {
     }
 
 }
+
+/* ====================================
+   CONTROL FINAL - CONTENIDO DEL INFORME
+==================================== */
+
+.pantalla-inicio .solo-informe {
+    display: none !important;
+}
+
+@media print {
+
+    .pantalla-inicio .solo-informe {
+        display: block !important;
+    }
+
+}
