@@ -979,7 +979,7 @@ function mostrarResultado() {
      PRÓXIMOS PASOS
      ==================================== -->
 
-            <div class="proximos-pasos">
+            <div class="proximos-pasos-solo-informe">
 
                 <h3>
                     Próximos pasos sugeridos
@@ -1044,7 +1044,7 @@ function mostrarResultado() {
                  HOJA 3 - PLAN DE ACCIÓN EJECUTIVO
             ==================================== -->
 
-            <div class="hoja-3">
+            <div class="hoja-3 solo-informe">
 
                 <div class="hoja-3-header">
 
