@@ -979,7 +979,7 @@ function mostrarResultado() {
      PRÓXIMOS PASOS
      ==================================== -->
 
-            <div class="proximos-pasos-solo-informe">
+            <div class="proximos-pasos solo-informe" style="display:none;">
 
                 <h3>
                     Próximos pasos sugeridos
