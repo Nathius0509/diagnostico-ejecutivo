@@ -1509,3 +1509,20 @@ h3 {
     cursor: pointer;
 }
 
+/* ====================================
+   CONTENIDO EXCLUSIVO DEL INFORME
+   Oculto en pantalla
+   Visible al imprimir
+==================================== */
+
+.solo-informe {
+    display: none;
+}
+
+@media print {
+
+    .solo-informe {
+        display: block;
+    }
+
+}
