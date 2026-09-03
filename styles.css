@@ -1511,18 +1511,16 @@ h3 {
 
 /* ====================================
    CONTENIDO EXCLUSIVO DEL INFORME
-   Oculto en pantalla
-   Visible al imprimir
 ==================================== */
 
 .solo-informe {
-    display: none;
+    display: none !important;
 }
 
 @media print {
 
     .solo-informe {
-        display: block;
+        display: block !important;
     }
 
 }
