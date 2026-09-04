@@ -1620,3 +1620,24 @@ h3 {
         display: block;
     }
 }
+
+/* ====================================
+   MAPA DE PRIORIDADES
+   Versión compacta en pantalla
+==================================== */
+
+@media screen {
+
+    .segunda-oportunidad-card {
+        display: none;
+    }
+
+}
+
+@media print {
+
+    .segunda-oportunidad-card {
+        display: block;
+    }
+
+}
