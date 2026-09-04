@@ -772,17 +772,46 @@ function mostrarResultado() {
                 ${puntajeGlobal}
                 <span>/100</span>
             </h1>
-
-
+            
             <div class="nivel">
                 ${nivel}
             </div>
-
-
+            
+            <div class="escala-madurez">
+            
+                <div class="escala-titulo">
+                    ESCALA DE MADUREZ
+                </div>
+            
+                <div class="escala-niveles">
+            
+                    <div class="escala-item ${nivel === "CRÍTICO" ? "activo" : ""}">
+                        <strong>0–39</strong>
+                        <span>CRÍTICO</span>
+                    </div>
+            
+                    <div class="escala-item ${nivel === "BÁSICO" ? "activo" : ""}">
+                        <strong>40–59</strong>
+                        <span>BÁSICO</span>
+                    </div>
+            
+                    <div class="escala-item ${nivel === "EN DESARROLLO" ? "activo" : ""}">
+                        <strong>60–79</strong>
+                        <span>EN DESARROLLO</span>
+                    </div>
+            
+                    <div class="escala-item ${nivel === "AVANZADO" ? "activo" : ""}">
+                        <strong>80–100</strong>
+                        <span>AVANZADO</span>
+                    </div>
+            
+                </div>
+            
+            </div>
+            
             <p class="descripcion-resultado">
                 ${descripcionNivel}
             </p>
-
             <!-- RESUMEN EJECUTIVO -->
 
             <div class="resumen-ejecutivo">
