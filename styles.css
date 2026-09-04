@@ -1605,3 +1605,18 @@ h3 {
         grid-template-columns: repeat(2, 1fr);
     }
 }
+
+/* ====================================
+   RECOMENDACIONES POR DIMENSIÓN
+   Ocultar en pantalla, mostrar en PDF
+==================================== */
+
+.recomendacion-dimension {
+    display: none;
+}
+
+@media print {
+    .recomendacion-dimension {
+        display: block;
+    }
+}
